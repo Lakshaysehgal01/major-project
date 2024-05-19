@@ -1,0 +1,145 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+/* navbar */
+
+.navbar {
+  /* height: 5rem; */
+  background-color: white;
+}
+.fa-compass {
+  font-size: 2rem;
+  color: #fe424d;
+}
+.nav-link {
+  color: #222222;
+  margin-left: 1rem;
+}
+
+/* footer */
+
+.footer {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-direction: column;
+  background-color: rgb(230 229 229);
+}
+.footer-social {
+  margin-top: 1rem;
+}
+.footer-social i {
+  color: #222222;
+  margin-right: 0.8rem;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+.footer-social i:hover {
+  transform: scale(1.1);
+  color: rgb(43, 43, 217);
+}
+.fa-instagram:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to bottom, pink, red, yellow);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+}
+.footer-company {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #222222;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 1rem;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* all  listing */
+.card {
+  border: none;
+  margin-bottom: 2rem;
+}
+.card img {
+  object-fit: cover;
+  border-radius: 1rem;
+  width: 100%;
+}
+.card-body {
+  padding: 0;
+}
+.card-text {
+  font-weight: 400;
+}
+.listing-link {
+  text-decoration: none;
+}
+/* card effect */
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  background-color: white;
+  opacity: 0.2;
+}
+h2 {
+  color: #fe424d;
+}
+/* show page */
+.show-img {
+  height: 40vh;
+}
+.button {
+  display: flex;
+  gap: 1.5rem;
+}
+#review-heading {
+  color: #fe424d;
+}
+/* reviews */
+.review-card {
+  border: 2px solid #fe424d; /* Border color */
+  border-radius: 10px; /* Border radius for rounded corners */
+  padding: 20px; /* Padding inside the border */
+  background-color: #f2f2f2; /* Background color inside the border */
+}
+
+/* map */
+#map {
+  width: 60vw;
+  height: 400px;
+}
+.marker {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+/* @media (max-width: 768px) {
+  .filter {
+    opacity: 0;
+  }
+} */
