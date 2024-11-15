@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 const ejsMate = require("ejs-mate");
 const path = require("path");
 const expressError = require("./utils/ExpressError.js");
-const listingsRouter = require("./routes/listing.js")
+const listingsRouter = require("./routes/listing.js");
 const reviewsRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js")
 const session = require("express-session");
@@ -79,6 +79,9 @@ app.use((req, res, next) => {
     next();
 })
 
+app.get("/",(req,res)=>{
+    res.redirect("/listing");
+})
 app.use("/listing", listingsRouter)//listing routes
 
 app.use("/listing/:id/review", reviewsRouter)//review router
